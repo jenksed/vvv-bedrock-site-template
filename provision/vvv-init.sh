@@ -78,8 +78,8 @@ END_HEREDOC
 }
 
 install_bedrock() {
-  if [ ! -d "${VVV_PATH_TO_SITE}/${PUBLIC_DIR}/web/wp" ]; then
-    if [ ! -d "${VVV_PATH_TO_SITE}/${PUBLIC_DIR}/web" ]; then
+  if [ ! -d "${VVV_PATH_TO_SITE}/${PUBLIC_DIR}/public_html/wp" ]; then
+    if [ ! -d "${VVV_PATH_TO_SITE}/${PUBLIC_DIR}/public_html" ]; then
       echo " * Install fresh Bedrock"
       noroot composer create-project roots/bedrock "${VVV_PATH_TO_SITE}/${PUBLIC_DIR}"
     else
